@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大转盘抽奖</title>
+	<script src="jquery.js"></script>
+	<!--jquery动画效果旋转插件-->
+	<script src="jquery.rotate.min.js"></script>
+	<!--大转盘效果主要脚本-->
+	<script src="index.js"></script>
+<link rel="stylesheet" href="index.css"/>
+<!--1条线 2个空  旋转0-->
+<!-- 2条线 4个空 旋转90度 -->
+<!-- 3条线 6个空 旋转60度 -->
+<!-- 4条线 8个空 旋转45度 -->
+<!-- 5条线 10个空 旋转36度 -->
+</head>
+
+<body>
+<h1 align="center">幸运大转盘</h1>
+<div id="content">
+	<div id="dzp">
+    </div>
+    <div id="stop">抽奖</div>
+</div>
+<div id="setting">
+	选择奖品数量:
+		<select id="select">
+			<option value="2">2个</option>
+			<option value="4">4个</option>
+			<option value="6">6个</option>
+			<option value="8">8个</option>
+			<option value="10">10个</option>
+			<option selected="selected" value="12">12个</option>
+		</select>
+	<br/>
+	<!--奖品输入框-->
+	<div id="prize">
+		
+	</div>
+	<button id="ok">确定</button>
+	<!--使用说明-->
+	<div>
+		使用说明:
+		<br/>
+		1.旋转奖品数量，默认为12个奖品
+		<br/>
+		2.奖品数量限制为偶数
+		<br/>
+		3.选择完成后可在左侧输入奖品名称
+		<br/>
+		4.输入完成后点击确定按钮即可
+		<br/>
+		5.若界面无法正常显示，可尝试更换浏览器显示模式
+	</div>
+</div>
+</body>
+</html>
